@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DailyJournal</title>
+       
+    </head>
+    <body>
+        <%- include("partials/header"); -%>
+            <h1>
+                Compose
+            </h1>
+            <form action = "/compose" method= "post">
+                <div class="form-group">
+                  <label>Title</label>
+                  <input type="text" name = "myContent" class="form-control"  >
+                  <label>Post</label>
+                  <textarea rows = "3" name = "myBody" cols="50" class="form-control"></textarea>
+                  
+                </div>
+                <button type="submit" class="btn btn-primary">Publish</button>           
+            </form>
+        <%- include("partials/footer"); -%>
+    </body>
+</html>
+
+
+
